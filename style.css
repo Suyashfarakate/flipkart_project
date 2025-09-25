@@ -2,8 +2,11 @@
   /* header */
   
     .header{
-        background-color: antiquewhite;
+        background:linear-gradient(90deg,#dc9404,#cdf37a);;
+        position: fixed;
+        width: 100%;
     }
+    
     .topbar{
         background:var(--primary);
         color:rgb(37, 15, 237);
@@ -19,12 +22,13 @@
         font-weight:700
     }
     .logo .mark{
-        background:white;
+        background:antiquewhite;
         color:var(--primary);
-        padding:6px 8px;
+        /* padding:2px 2px; */
         border-radius:4px;
         font-weight:800;
         height: 10px;
+        margin-left: 20px;
         
     }
     .search{
@@ -48,9 +52,16 @@
     .actions{
         display:flex;
         gap:10px;
-        align-items:center
+        align-items:center;  
     }
-
+    .actions a{
+        text-decoration: none;
+        font-style: initial;
+        font-weight: 200;
+    }
+    .actions a:hover{
+         transform: scale(1.25);
+    }
     /* .action-btn{background:transparent;border:1px solid rgba(255,255,255,0.2);padding:8px 12px;border-radius:4px;color:white;cursor:pointer} */
 
     .product_head{
@@ -86,13 +97,16 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    height: 350px;
     }
 
     .product_card img{
-      width: 100%;
-      height: auto;
+      width:100%;
     }
 
+    .product_card img:hover{
+        
+    }
     .product_card p{
       color: #555;
       font-size: 14px;
@@ -140,9 +154,10 @@
         grid-template-columns:1fr 360px;
         gap:18px;
         padding:18px;
+        z-index:1;
     }
     .promo{
-        background:linear-gradient(90deg,#e6f0ff,rgba(40,116,240,0.06));
+        background:linear-gradient(90deg,#e3e4e7,rgba(246, 248, 249, 0.06));
         padding:20px;
         border-radius:8px
     }
@@ -155,7 +170,7 @@
         color:var(--muted)
     }
     .banner{
-        background:linear-gradient(90deg,#fff,#fff);
+        background:linear-gradient(90deg,#cb8383,#fff);
         padding:12px;
         border-radius:8px;
         border:1px solid #eee
